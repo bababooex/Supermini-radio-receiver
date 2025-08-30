@@ -1,2 +1,2 @@
 # Supermini-radio-receiver
-Miniature radio receiver using MxL5007T TV tuner and ATmega328P MCU.
+Will add arduino code soon and also some tutorial for those, who are interested.
