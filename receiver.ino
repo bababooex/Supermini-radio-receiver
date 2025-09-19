@@ -1,3 +1,6 @@
+//This is the first version of the code, so needs some fixes, but should work as is for now
+
+
 //all libraries (controlling tuner, keypad and display) 
 #include "MxL5007T.h"
 #include "Keypad.h"
@@ -29,7 +32,7 @@ byte rowPins[ROWS] = { 6, 7, 8, 9 };
 byte colPins[COLS] = { 10, 11, 12 };
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
-// Frequency state
+// Starting frequency, I will change this to first saved frequency
 int frec1 = 468;   // integer MHz
 int frec2 = 7;     // decimal part (0–9)
 float frec = 468.7;
@@ -39,7 +42,7 @@ unsigned long scanDelay = 300;  // ms
 bool inputMode = false;
 String newFrec = "";
 
-// ---- Functions ---- void setFrequency
+// setting frequency function
 void setFrequency(float freq) {
   // keep user-visible frequency as is
   frec = freq;
@@ -62,7 +65,7 @@ void setFrequency(float freq) {
   // tuner and lcd limit set
   if (tunerFreqHz < 44000000L) tunerFreqHz = 44000000L;
   if (tunerFreqHz > 999900000L) tunerFreqHz = 999900000L;
-  // finally set the tuner frequency
+  // finally set the tuner frequency and bandwidth (6MHz is enough)
   tuner.setFrequencyAndBw((uint32_t)tunerFreqHz, 6);
 }
 
@@ -127,6 +130,7 @@ void processInputKey(char key) {
     }
   }
 }
+// init everything
 void setup() {
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments,
                updateWithDelays, leadingZeros, disableDecPoint);
@@ -141,7 +145,7 @@ unsigned long lastStep = 0;
 void loop() {
   sevseg.refreshDisplay();
 
-  // Always read analog buttons
+  // Always read analog buttons, because I dont have enough pins, so I use ADC
   int upVal = analogRead(A7);
   int downVal = analogRead(A6);
   bool upPressed   = (upVal < 400);
@@ -166,7 +170,7 @@ void loop() {
     }
   }
 
-  // === Handle Analog Buttons (UP/DOWN) ===
+  // button handler
   if (!inputMode && (upPressed || downPressed)) {
     if (holdStart == 0) { 
       holdStart = millis();
