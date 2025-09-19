@@ -13,6 +13,7 @@ Crystal is very often 24 MHz, but you can also change this. Mode doesnt really m
 Will add soon...
 # Parameters
 - Frequency range --        44 MHz - 999.9 MHz (limited by number of digits, but should be able to go over 1000 MHz)
+- Reception problems --     The receiver is less sensitive, almost silent on harmonic frequencies of the tv tuner crystal (in my example 48 MHz, 72 MHz etc.), but this resolves on higher frequencies 
 - Supported modulations --  WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
 - Sensitivity --            WFM	<0.8 μV (heavily depends on fm demodulator, I used TA2003)
 - Receiver bandwidth --     150kHz (I couldnt find lower than this value, but 110kHz would be probably better, but it would maybe destroy WFM audio)
