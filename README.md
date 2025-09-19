@@ -1,5 +1,5 @@
 # Supermini-radio-receiver
-Will add arduino code when I have time and also some tutorial for those, who are interested. Right now, you can atleast go to external references, to see, what websites I used for inspiration.
+Simple radio receiver, that works with easily obtainable tv tuner chip. Although nowdays, we have RTL-SDR dongles, it is still nice to make radio receiver and test your soldering skills by adding wires to TQFP32 package. That allows the size of the receiver to be very small, I couldnt find any smaller receiver, that doesnt use SDR processing and works on this broad spectrum of frequencies.
 # How to
 You must change this part of the MxL5007T.h to work with 10.7 MHz IF frequency for FM, as suggested on onetransistor website, to work with my code:
 - Take the IF from tuner, consider it as any RF signal and perform an extra conversion. Frequency conversions are performed by mixing two signals (the incoming RF with a local oscillator). The mixing result must be an IF at a common frequency, such as the 10.7 MHz for FM detectors. Therefore local oscillator (L.O.) should work at a frequency that's either 10.7 MHz higher or lower than input RF.
