@@ -12,14 +12,14 @@ Crystal is very often 24 MHz, but you can also change this. Mode doesnt really m
 # Block diagram
 Will add soon...
 # Parameters
-Frequency range		        44 MHz - 999.9 MHz (limited by number of digits, but should be able to go over 1000 MHz)
-Supported modulations     WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
-Sensitivity	              WFM	<0.8 μV (heavily depends on fm demodulator, I used TA2003)
-Receiver bandwidth        150kHz (I couldnt find lower than this value, but 110kHz would be probably better, but it would maybe destroy WFM audio)
-Frequency step	          100 kHz
-Intermediate frequency 		10.7 MHz
-Power consumption		      <400mW (not measured, but tuner should consume around 300mW and other parts probably less than 100mW)
-Power supply              3.7V li-ion battery (with 5V DC-DC converter from powerbank)
+- Frequency range --        44 MHz - 999.9 MHz (limited by number of digits, but should be able to go over 1000 MHz)
+- Supported modulations --  WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
+- Sensitivity --            WFM	<0.8 μV (heavily depends on fm demodulator, I used TA2003)
+- Receiver bandwidth --     150kHz (I couldnt find lower than this value, but 110kHz would be probably better, but it would maybe destroy WFM audio)
+- Frequency step --	        100 kHz
+- Intermediate frequency -- 10.7 MHz
+- Power consumption	--	    <400mW (not measured, but tuner should consume around 300mW and other parts probably less than 100mW)
+- Power supply --           3.7V li-ion battery (with 5V DC-DC converter from powerbank)
 # Images
 Will add soon...
 # Schematics
