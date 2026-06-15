@@ -23,8 +23,11 @@ Will add soon...
 - Power supply --           3.7V li-ion battery (with 5V DC-DC converter from powerbank)
 # Images
 Very ugly construction, but works, is is superregenerative principle like my DMP - high school graduation project
+
 ![rx-on](images/rx-on.jpg)
+
 ![back](images/back.jpg)
+
 # Schematics
 Will add later...
 # External references
