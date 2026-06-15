@@ -19,11 +19,11 @@ Very simple block diagram
 - Reception problems --     The receiver is less sensitive, almost silent on harmonic frequencies of the tv tuner crystal (in my example 48 MHz, 72 MHz etc.), but this resolves on higher frequencies 
 - Supported modulations --  WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
 - Sensitivity --            WFM	<0.8 μV (heavily depends on FM demodulator, I used ~~TA2003~~ BA4236L FM/AM detector)
-- Receiver bandwidth --     150kHz (I couldnt find lower than this value, but 110kHz would be probably better, but it would maybe destroy WFM audio)
+- Receiver bandwidth --     150 kHz (I couldnt find lower than this value, but 110 kHz would be probably better, but it would maybe destroy WFM audio)
 - Frequency step --	        100 kHz
 - Intermediate frequency -- 10.7 MHz
-- Power consumption	--	    <400mW (not measured, but tuner should consume around 300mW and other parts probably less than 100mW)
-- Power supply --           3.7V li-ion battery (with 5V DC-DC converter from powerbank)
+- Power consumption	--	    <400 mW (not measured, but tuner should consume around 300 mW and other parts probably less than 100 mW)
+- Power supply --           3.7 V li-ion battery (with 5V DC-DC converter from powerbank)
 # Images
 Very ugly construction, but works, it is superregenerative principle like my DMP - high school graduation project
 
