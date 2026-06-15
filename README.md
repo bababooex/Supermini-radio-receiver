@@ -15,7 +15,7 @@ Will add soon...
 - Frequency range --        44 MHz - 999.9 MHz (limited by number of digits, but should be able to go over 1000 MHz)
 - Reception problems --     The receiver is less sensitive, almost silent on harmonic frequencies of the tv tuner crystal (in my example 48 MHz, 72 MHz etc.), but this resolves on higher frequencies 
 - Supported modulations --  WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
-- Sensitivity --            WFM	<0.8 μV (heavily depends on fm demodulator, I used TA2003)
+- Sensitivity --            WFM	<0.8 μV (heavily depends on FM demodulator, I used ~~TA2003~~ BA4236L FM/AM detector)
 - Receiver bandwidth --     150kHz (I couldnt find lower than this value, but 110kHz would be probably better, but it would maybe destroy WFM audio)
 - Frequency step --	        100 kHz
 - Intermediate frequency -- 10.7 MHz
@@ -32,5 +32,6 @@ Will add later...
 - https://github.com/DeanIsMe/SevSeg - Library for 4-Digit 7-Segment Display
 # TO DO
 - Upgrade the code to work with menu button
+- With adding AV2026, I could go over 1000 to 2500 MHz, but that requires rf switching etc.
 - Fix displaying frequency when going under 100 MHz
 
