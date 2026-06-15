@@ -23,7 +23,7 @@ Very simple block diagram
 - Frequency step --	        100 kHz
 - Intermediate frequency -- 10.7 MHz
 - Power consumption	--	    <400 mW (not measured, but tuner should consume around 300 mW and other parts probably less than 100 mW)
-- Power supply --           3.7 V li-ion battery (with 5V DC-DC converter from powerbank)
+- Power supply --           3.7 V li-ion battery (with 5 V DC-DC converter from powerbank)
 # Images
 Very ugly construction, but works, it is superregenerative principle like my DMP - high school graduation project
 
