@@ -27,9 +27,10 @@ Will add soon...
 Will add later...
 # External references
 - https://www.onetransistor.eu/2014/08/mxl5007t-based-radio.html - Original idea to make this device, also contains library for the tv tuner itself
-- https://earmark.net/gesr/cf.htm - Ceramic filter page, choosing right crystal filter for fm demodulator
+- https://earmark.net/gesr/cf.htm - Ceramic filter page, choosing right crystal filter for FM demodulator
 - https://github.com/Chris--A/Keypad - Keypad library (can also be found on Arduino Playground)
 - https://github.com/DeanIsMe/SevSeg - Library for 4-Digit 7-Segment Display
+- https://p-45.narod.ru/Mini-45.html - My inspiration to make this device, but even smaller - not Mini-45, but Micro-45! 
 # TO DO
 - Upgrade the code to work with menu button
 - With adding AV2026, I could go over 1000 to 2500 MHz, but that requires rf switching etc.
