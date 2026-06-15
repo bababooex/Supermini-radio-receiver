@@ -29,7 +29,7 @@ Very ugly construction, but works, is is superregenerative principle like my DMP
 ![back](images/back.jpg)
 
 # Schematics
-Will add later...
+Work in progress, because it was built from few separate schematics
 # External references
 - https://www.onetransistor.eu/2014/08/mxl5007t-based-radio.html - Original idea to make this device, also contains library for the tv tuner itself
 - https://p-45.narod.ru/Mini-45.html - Also inspiration to make this device, but even smaller - not Mini-45, but Micro-45!
