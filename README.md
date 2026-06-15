@@ -25,7 +25,7 @@ Very simple block diagram
 - Power consumption	--	    <400mW (not measured, but tuner should consume around 300mW and other parts probably less than 100mW)
 - Power supply --           3.7V li-ion battery (with 5V DC-DC converter from powerbank)
 # Images
-Very ugly construction, but works, is is superregenerative principle like my DMP - high school graduation project
+Very ugly construction, but works, it is superregenerative principle like my DMP - high school graduation project
 
 ![rx-on](images/rx-on.jpg)
 
