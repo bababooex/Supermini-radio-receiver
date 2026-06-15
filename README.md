@@ -10,7 +10,10 @@ void init(unsigned char xtal_freq = MxL_XTAL_24_MHz, unsigned char mode = 1, uns
 ```
 Crystal is very often 24 MHz, but you can also change this. Mode doesnt really matter, I chose DVB-T. Important is IF frequency output, so set it to 7. Other values are not really needed for this purpose.
 # Block diagram
-Will add soon...
+Very simple block diagram
+
+![block_diagram](images/block_diagram.png)
+
 # Parameters
 - Frequency range --        44 MHz - 999.9 MHz (limited by number of digits, but should be able to go over 1000 MHz)
 - Reception problems --     The receiver is less sensitive, almost silent on harmonic frequencies of the tv tuner crystal (in my example 48 MHz, 72 MHz etc.), but this resolves on higher frequencies 
