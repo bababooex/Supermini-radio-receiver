@@ -32,7 +32,7 @@ byte rowPins[ROWS] = { 6, 7, 8, 9 };
 byte colPins[COLS] = { 10, 11, 12 };
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);
 
-// Starting frequency, I will change this to first saved frequency - set to local trunking channel for rx testing, change as you like
+// Starting frequency - set to local trunking channel for rx testing, change as you like
 int frec1 = 468;   // integer MHz
 int frec2 = 7;     // decimal part (0–9)
 float frec = 468.7;
