@@ -19,7 +19,7 @@ Very simple block diagram
 - Reception problems --     The receiver is less sensitive, almost silent on harmonic frequencies of the tv tuner crystal (in my example 48 MHz, 72 MHz etc.), but this resolves on higher frequencies 
 - Supported modulations --  WFM (but can also do NFM and AM in certain circumstances, also depends on the IF filter)
 - Sensitivity --            WFM	<0.8 μV (heavily depends on FM demodulator, I used ~~TA2003~~ BA4236L FM/AM detector)
-- Receiver bandwidth --     150 kHz (I couldnt find lower than this value, but 110 kHz would be probably better, but it would maybe destroy WFM audio)
+- Receiver bandwidth --     Depends on the phase shift coil, but probably around 200 kHz or less
 - Frequency step --	        100 kHz
 - Intermediate frequency -- 10.7 MHz
 - Power consumption	--	    <400 mW (not measured, but tuner should consume around 300 mW and other parts probably less than 100 mW)
@@ -36,7 +36,7 @@ Work in progress, because it was built from few separate schematics
 # External references
 - https://www.onetransistor.eu/2014/08/mxl5007t-based-radio.html - Original idea to make this device, also contains library for the tv tuner itself
 - https://p-45.narod.ru/Mini-45.html - Also inspiration to make this device, but even smaller - not Mini-45, but Micro-45!
-- https://earmark.net/gesr/cf.htm - Ceramic filter page, choosing right crystal filter for FM demodulator
+- https://earmark.net/gesr/cf.htm - Ceramic filter page, choosing right crystal filter for FM demodulator, but not required, since I used different chip
 - https://github.com/Chris--A/Keypad - Keypad library (can also be found on Arduino Playground)
 - https://github.com/DeanIsMe/SevSeg - Library for 4-Digit 7-Segment Display 
 # TO DO
